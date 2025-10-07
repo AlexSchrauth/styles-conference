@@ -1,5 +1,6 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
-  License: none (public domain)
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -59,38 +60,31 @@ table {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-
 .container,
-.grid{
+.grid {
   margin: 0 auto;
   width: 960px;
 }
-
 .container {
-  margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
-  width: 960px;
 }
-
-.col-1-3{
-  width:33.33%;
-}
-.col-2-3p{
-  width:66.66%;
-}
-
+.grid,
 .col-1-3,
 .col-2-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-1-3,
+.col-2-3  {
   display: inline-block;
   vertical-align: top;
 }
-
-.grid,
-.col-1-3,
-.col-2-3{
-  padding-left:15px;
-padding-right:15px;
+.col-1-3 {
+  width: 33.33%;
+}
+.col-2-3 {
+  width: 66.66%;
 }
 
 /*
@@ -98,6 +92,7 @@ padding-right:15px;
   Clearfix
   ========================================
 */
+
 .group:before,
 .group:after {
   content: "";
@@ -117,21 +112,11 @@ padding-right:15px;
   ========================================
 */
 
-h1, h3, h4, h5, p{
-  margin-bottom:22px;}
-/*
-  ========================================
-  Primary header
-  ========================================
-*/
-
-.logo { 
-  border-top: 4px solid #648880;
-  padding: 40px 0 22px 0;
-  float: left;
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
 }
 
-  /*
+/*
   ========================================
   Buttons
   ========================================
@@ -142,10 +127,35 @@ h1, h3, h4, h5, p{
   display: inline-block;
   margin: 0;
 }
-
 .btn-alt {
   border: 1px solid #dfe2e5;
   padding: 10px 30px;
+}
+
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+
+.logo {
+  border-top: 4px solid #648880;
+  float: left;
+  padding: 40px 0 22px 0;
+}
+
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+
+.primary-footer {
+  padding-bottom: 44px;
+  padding-top: 44px;
+}
+.primary-footer small {
+  float: left;
 }
 
 /*
@@ -158,17 +168,3 @@ h1, h3, h4, h5, p{
   padding: 22px 80px 66px 80px;
 }
 
-/*
-  ========================================
-  Primary footer
-  ========================================
-*/
-
-.primary-footer small {
-  float: left;
-}
-           
-.primary-footer {
-  padding-bottom: 44px;
-  padding-top: 44px;
-}
